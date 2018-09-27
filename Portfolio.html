@@ -1,48 +1,60 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Greg's Portfolio</title>
-        <style>
+        <title>The Chosen Website</title>
+        <style type="text/css">
         body {
-            background: #FD7673;
-            color: #fff;
+            background: rgb(125, 198, 205);
+            color: rgb(45, 45, 45);
             padding: 10px;
             font-family: arial;
         }
-        
-        img {
-            width: 200px;
-            float: left;
-            margin-bottom: 20px;
-            margin-right:40px;
+        header {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        h1 {
+            margin: 10px;
+        }
+        #all-contents {
+            max-width: 800px;
+            margin: auto;
         }
         
-        p {
-            width: 600px;
-        }
-        
+        /* navigation menu */
         nav {
-            background: #7C0F0A;
-            padding: 1px;
-            border-width:20px;
-            border-radius:80px / 40px;
+            background: rgb(239, 80, 41);
+            margin: 0 auto;
+            display: flex;
+            padding: 10px;
         }
-    
+        nav header {
+            display: flex;
+            align-items: center;
+            color: rgb(255, 255, 255);
+            flex: 1;
+        }
         nav ul {
             list-style-image: none;
         }
-        
-        nav ul li {
-            display: inline;
-            padding-right: 10px;
+        nav li {
+            display: inline-block;
+            padding: 0 10px;
         }
-        
         nav a {
             text-decoration: none;
             color: #fff;
         }
-    </style>
-    /* portfolio styles */
+        /* main container area beneath menu */
+        main {
+            background: rgb(245, 238, 219);
+            display: flex;
+        }
+        .content {
+            flex: 1;
+            padding: 15px;
+        }
+        /* portfolio styles */
             #portfolio {
                 list-style-type: none;
                 padding-left: 0;
@@ -63,24 +75,26 @@
                 text-decoration: none;
                 color: #454545;
             }
+    </style>
     </head>
     
     <body>
-        <nav>
+        <div id="all contents">
+            <nav>
+                <header>The Chosen Website</header>
             <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-    </ul>
+        <li><a href="index.html">Home</a>
+        </li>
+        <li><a href="portfolio.html">Portfolio</a>
+        </li>
+           </ul>
         </nav>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT95Sa4UEW7OwUvvz1vjnZ40EhrHD2cDHCnQKZ99xbbTwzVBa9GhA">
-        <h1>Gregory</h1>
-        <p>Student of ESH High</p>
-        <h3>Interests</h3>
-<ul>
-    <li>Favorite car is a Lexus RC F Sport.</li>
-    <li>Favorite Anime is Naruto.</li>
-    <li>Favorite Game is Forza Horizon 3.</li>
-</ul>
+        <main>
+            <div class="content">
+                <h1>Portfolio</h1>
+                <ul id="portfolio">
+                </ul>
+            </div>
+        </main>
     </body>
 </html>
