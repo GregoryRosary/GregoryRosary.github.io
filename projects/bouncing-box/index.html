@@ -58,7 +58,7 @@
 			var speed;
 			var direction;
 			
-			position = 0;
+			position = position;
 		    points = 0;
 		    speed = 10;
 		    direction = 1;
@@ -78,7 +78,7 @@
 			};
 			
 			var handleBoxClick = function(){
-				position = 0
+				position = position;
                 speed = speed + 3;
 		     	points = points + 1;
                 box.text(points);      
