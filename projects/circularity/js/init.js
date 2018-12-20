@@ -33,18 +33,30 @@ var init = function (window) {
         
 
         // TODO 3 : Call the drawCircle function 5 times //
-        functionName(argument1, argument2, argument3, argument4, argument5);
+        drawCircle()
+        drawCircle
+        drawCircle
+        drawCircle
+        drawCircle
  
 
         // TODO 7 : Create a Loop to call drawCircle 100 times
+var counter = 0;
+while(counter < 100) {
+    drawCircle()
+    counter++
+}
 
+for (var counter = 0; counter < 100; counter++) {
+    counter [0] = 100;
+}
     
         view.addChild(fps);
         app.addUpdateable(fps);
     
         runner.checkCircleBounds = function(circle) {
             // TODO 5 : YOUR CODE STARTS HERE //////////////////////
-            var runner.checkCircleBounds {
+            
             // if the circle has gone out the right side of the screen then place it off-screen left
             if ( circle.x > canvas.width + circle.radius ) {
                 circle.x = 0 - circle.radius;
@@ -67,14 +79,21 @@ var init = function (window) {
     
         var update = function() {
             // TODO 4 : Update the circle's position //
-            var update = function(physikz.updatePosition(circles[0])); {
-                var circles = ['physikz.updatePosition()']
+                physikz.updatePosition(circles[0]);
+                console.log(circles);
 
             
             // TODO 6 : Call checkCircleBounds on your circles.
-           
+               runner.checkCircleBounds(circle);
 
             // TODO 8 : Iterate over the array
+          var circles = ["1", "2", "3", "4", "5"]
+           var circle;
+           
+           for (var  i = 0; i < circles; i++) {
+               circle = circle[i];
+               console.log(circle);
+           }
            
 
         }
